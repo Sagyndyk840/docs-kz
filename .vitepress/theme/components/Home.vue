@@ -14,18 +14,16 @@ onMounted(async () => {
 <template>
   <section id="hero">
     <h1 class="tagline">
-      The
-      <span class="accent">Progressive</span>
-      <br />JavaScript Framework
+      <span class="accent">Прогрессивті </span>
+      <br />JavaScript фреймворк
     </h1>
     <p class="description">
-      An approachable, performant and versatile framework for building web
-      user interfaces.
+      Пайдаланушы интерфейстерін құруға арналған қол жетімді, өнімді және икемді фреймворк.
     </p>
     <p class="actions">
       <VueMasteryModal />
       <a class="get-started" href="/guide/introduction.html">
-        Get Started
+        Танысуды бастаңыз
         <svg
           class="icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -38,12 +36,12 @@ onMounted(async () => {
           />
         </svg>
       </a>
-      <a class="setup" href="/guide/quick-start.html">Install</a>
+      <a class="setup" href="/guide/quick-start.html">Орнату</a>
     </p>
   </section>
 
   <section v-if="data && data.special" id="special-sponsor">
-    <span class="lead">Special Sponsor</span>
+    <span class="lead">Арнайы Демеуші</span>
     <template v-for="{ url, img, name, description } of data.special">
       <a :href="url" target="_blank" rel="sponsored noopener">
         <picture v-if="img.endsWith('png')">
@@ -67,32 +65,30 @@ onMounted(async () => {
 
   <section id="highlights" class="vt-box-container">
     <div class="vt-box">
-      <h2>Approachable</h2>
+      <h2>Қолжетімді</h2>
       <p>
-        Builds on top of standard HTML, CSS and JavaScript with intuitive
-        API and world-class documentation.
+        HTML, CSS және JavaScript стандарттарында құрастырылған. Интуитивті
+        API және керемет құжаттама.
       </p>
     </div>
     <div class="vt-box">
-      <h2>Performant</h2>
+      <h2>Өнімді</h2>
       <p>
-        Truly reactive, compiler-optimized rendering system that rarely
-        requires manual optimization.
+        Компилятор арқылы оңтайландырылған шынайы реактивті көрсету жүйесі. Оңтайландырудың минималды қажеттілігі.
       </p>
     </div>
     <div class="vt-box">
-      <h2>Versatile</h2>
+      <h2>Әмбебап</h2>
       <p>
-        A rich, incrementally adoptable ecosystem that scales between a
-        library and a full-featured framework.
+        Бай, бірте-бірте енгізілген экожүйе. Кітапханадан толыққанды фреймворкке дейін масштабталады.
       </p>
     </div>
   </section>
 
   <section id="sponsors">
-    <h2>Platinum Sponsors</h2>
+    <h2>Platinum демеушілер</h2>
     <SponsorsGroup tier="platinum" placement="landing" />
-    <h2>Gold Sponsors</h2>
+    <h2>Gold демеушілер</h2>
     <SponsorsGroup tier="gold" placement="landing" />
   </section>
 

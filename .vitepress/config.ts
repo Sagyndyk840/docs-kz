@@ -8,22 +8,22 @@ import { headerPlugin } from './headerMdPlugin'
 
 const nav: ThemeConfig['nav'] = [
   {
-    text: 'Docs',
+    text: 'Құжаттама',
     activeMatch: `^/(guide|style-guide|cookbook|examples)/`,
     items: [
-      { text: 'Guide', link: '/guide/introduction' },
-      { text: 'Tutorial', link: '/tutorial/' },
-      { text: 'Examples', link: '/examples/' },
-      { text: 'Quick Start', link: '/guide/quick-start' },
+      { text: 'Нұсқаулық', link: '/guide/introduction' },
+      { text: 'Интерактивті оқулық', link: '/tutorial/' },
+      { text: 'Мысалдар', link: '/examples/' },
+      { text: 'Жылдам бастау', link: '/guide/quick-start' },
       // { text: 'Style Guide', link: '/style-guide/' },
-      { text: 'Glossary', link: '/glossary/' },
-      { text: 'Error Reference', link: '/error-reference/' },
+      { text: 'Глоссарий', link: '/glossary/' },
+      { text: 'Қателер Нұсқаулығы', link: '/error-reference/' },
       {
-        text: 'Vue 2 Docs',
+        text: 'Vue 2 Құжаттамасы',
         link: 'https://v2.vuejs.org'
       },
       {
-        text: 'Migration from Vue 2',
+        text: 'Vue 2 Көшіру нұсқаулығы',
         link: 'https://v3-migration.vuejs.org/'
       }
     ]
@@ -34,11 +34,11 @@ const nav: ThemeConfig['nav'] = [
     link: '/api/'
   },
   {
-    text: 'Playground',
+    text: 'Код теру алаңы',
     link: 'https://play.vuejs.org'
   },
   {
-    text: 'Ecosystem',
+    text: 'Экожүйе',
     activeMatch: `^/ecosystem/`,
     items: [
       {
@@ -102,7 +102,7 @@ const nav: ThemeConfig['nav'] = [
     ]
   },
   {
-    text: 'About',
+    text: 'Біз туралы',
     activeMatch: `^/about/`,
     items: [
       { text: 'FAQ', link: '/about/faq' },
@@ -120,11 +120,11 @@ const nav: ThemeConfig['nav'] = [
     ]
   },
   {
-    text: 'Sponsor',
+    text: 'Демеушілер',
     link: '/sponsor/'
   },
   {
-    text: 'Partners',
+    text: 'Серіктестер',
     link: '/partners/',
     activeMatch: `^/partners/`
   }
